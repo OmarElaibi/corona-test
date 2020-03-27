@@ -12,4 +12,28 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  switchDirection() {
+    if (localStorage.getItem('lang') === 'ar') {
+      return 'rtl';
+    } else if (localStorage.getItem('lang') === 'fr') {
+      return 'ltr';
+    }
+  }
+
+  switchDirectionReverse() {
+    if (localStorage.getItem('lang') === 'ar') {
+      return 'ltr';
+    } else if (localStorage.getItem('lang') === 'fr') {
+      return 'rtl';
+    }
+  }
+
+  alignText() {
+    if (localStorage.getItem('lang') === 'ar') {
+      return 'text-align-right';
+    } else if (localStorage.getItem('lang') === 'fr') {
+      return 'text-align-left';
+    }
+  }
+
 }

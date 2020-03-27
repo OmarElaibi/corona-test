@@ -20,6 +20,30 @@ export class QuizComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  switchDirection() {
+    if (localStorage.getItem('lang') === 'ar') {
+      return 'rtl';
+    } else if (localStorage.getItem('lang') === 'fr') {
+      return 'ltr';
+    }
+  }
+
+  switchDirectionReverse() {
+    if (localStorage.getItem('lang') === 'ar') {
+      return 'ltr';
+    } else if (localStorage.getItem('lang') === 'fr') {
+      return 'rtl';
+    }
+  }
+
+  alignText() {
+    if (localStorage.getItem('lang') === 'ar') {
+      return 'text-align-right';
+    } else if (localStorage.getItem('lang') === 'fr') {
+      return 'text-align-left';
+    }
+  }
+
   goNext(stepper: MatStepper) {
     stepper.next();
   }
@@ -36,7 +60,7 @@ export class QuizComponent implements OnInit {
 
   checkResult() {
     console.log("check check");
-    if(this.resultat === 'خصك تعيط ل 141') {
+    if (this.resultat === 'خصك تعيط ل 141') {
       return true;
     } else {
       return false;

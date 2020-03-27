@@ -16,6 +16,7 @@ export class MultipleStepsFormComponent implements OnInit {
   progressBarValue;
   symptoms: Symptoms;
   ppf: PoorPrognosticFactor;
+  direction: string;
 
   @Output() nextEvent = new EventEmitter<any>();
 
@@ -52,6 +53,32 @@ export class MultipleStepsFormComponent implements OnInit {
     this.progressBarValue = (1 / 23) * 100;
     this.totalStepsCount = 22;
     this.initializeFormGroups();
+  }
+
+  switchDirection() {
+    if (localStorage.getItem('lang') === 'ar') {
+      this.direction = 'rtl';
+      return 'rtl';
+    } else if (localStorage.getItem('lang') === 'fr') {
+      this.direction = 'ltr';
+      return 'ltr';
+    }
+  }
+
+  switchDirectionReverse() {
+    if (localStorage.getItem('lang') === 'ar') {
+      return 'ltr';
+    } else if (localStorage.getItem('lang') === 'fr') {
+      return 'rtl';
+    }
+  }
+
+  alignText() {
+    if (localStorage.getItem('lang') === 'ar') {
+      return 'text-align-right';
+    } else if (localStorage.getItem('lang') === 'fr') {
+      return 'text-align-left';
+    }
   }
 
   initializeFormGroups() {

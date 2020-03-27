@@ -35,8 +35,8 @@
 
 
     "footerTitle": "Contacts utiles",
-    "footerCall1": "Numéro économique \"Allo veille épidémiologique\"",
-    "footerCall2": "Aide médicale urgente",
+    "footerCall1": "Numéro économique - Allo veille épidémiologique",
+    "footerCall2": "Aide médicale urgente - Allo SAMU",
 
 
     "adviceTitle1": "Comment se protéger et protéger les autres au quotidien ?",
@@ -44,8 +44,8 @@
     "adviceIcon2": "Lavez-vous très régulièrement les mains",
     "adviceIcon3": "Portez un masque si vous êtes malade",
     "adviceIcon4": "Toussez ou éternuez dans votre coude ou dans un mouchoir",
-    "adviceIcon5": "Utilisez un mouchoir à usage unique et jetez-le",
-    "adviceIcon6": "Désinfection de votre emplacement",
+    "adviceIcon5": "Ne touchez pas vos yeux, votre bouche ou votre nez",
+    "adviceIcon6": "Évitez les rassemblements",
     "adviceIcon7": "Restez chez vous, évitez tout contact avec les autres",
 
     
@@ -58,7 +58,7 @@
     
     "preambule": "Préambule",
     "preambuleContent1": "L’application est fournie à titre gratuit, en l’état, uniquement à des fins d’information pour contribuer à fluidifier la prise en charge des personnes par les services d’urgences pendant l’épidémie de Coronavirus COVID-19. L’exhaustivité, l’exactitude, le caractère à jour des informations et contenus mis à disposition dans cette application, ou leur adéquation à des finalités particulières, ne sont pas garantis.",
-    "preambuleContent2": ">Cette application ne substitue pas votre médecin ou votre pharmacien consultant qui sont plus aptes à vous donner plus de précision, ce qui vous amène à prendre conseils auprès d'un médecin.",
+    "preambuleContent2": "Cette application ne substitue pas votre médecin ou votre pharmacien consultant qui sont plus aptes à vous donner plus de précision, ce qui vous amène à prendre conseils auprès d'un médecin.",
     "preambuleContent3": "Les informations de cette application est le premier niveau de la détection des cas possibles du COVID-19.",
     
     "Quiz": "Questionnaire",
@@ -70,7 +70,7 @@
 
     "previous": "Précédent",
     "next": "Suivant",
-    "Finished": "Le test est terminé",
+    "Finished": "Terminer le test",
 
     "deg": "degrés",
     "cm": "cm",

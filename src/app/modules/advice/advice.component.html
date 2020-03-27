@@ -2,40 +2,40 @@
     <div class="container section-container">
         <div class="row ">
             <div class="col-12 mt-4">
-                <h2 dir="rtl" id="symptoms-title">{{'adviceTitle1' | translate}}</h2>
+                <h2 [ngClass]="switchDirection()" id="symptoms-title">{{'adviceTitle1' | translate}}</h2>
             </div>
         </div>
         <div class="row">
             <div class="col-6 col-sm-4 symptom-card">
-                <img src="assets/imgs/05.svg" alt="fever-emoji">
-                <h5>{{'adviceIcon1' | translate}}</h5>
+                <img src="assets/imgs/ico3.svg" alt="fever-emoji">
+                <h5 [ngClass]="switchDirection()">{{'adviceIcon1' | translate}}</h5>
             </div>
             <div class="col-6 col-sm-4 symptom-card">
-                <img src="assets/imgs/wash.svg" alt="hands-emoji">
-                <h5>{{'adviceIcon2' | translate}}</h5>
+                <img src="assets/imgs/ico1.svg" alt="hands-emoji">
+                <h5 [ngClass]="switchDirection()">{{'adviceIcon2' | translate}}</h5>
             </div>
             <div class="col-6 col-sm-4 symptom-card">
-                <img src="assets/imgs/02.svg" alt="mask">
-                <h5>{{'adviceIcon3' | translate}}</h5>
+                <img src="assets/imgs/ico2.svg" alt="mask">
+                <h5 [ngClass]="switchDirection()">{{'adviceIcon3' | translate}}</h5>
             </div>
             <div class="col-6 col-sm-4 symptom-card">
-                <img src="assets/imgs/cough.svg" alt="cough-emoji">
-                <h5>{{'adviceIcon4' | translate}}</h5>
+                <img src="assets/imgs/ico6.svg" alt="cough-emoji">
+                <h5 [ngClass]="switchDirection()">{{'adviceIcon4' | translate}}</h5>
             </div>
             <div class="col-6 col-sm-4 symptom-card">
-                <img src="assets/imgs/mouchoir.svg" alt="mpuchoir">
-                <h5>{{'adviceIcon5' | translate}}</h5>
+                <img src="assets/imgs/ico5.svg" alt="mpuchoir">
+                <h5 [ngClass]="switchDirection()">{{'adviceIcon5' | translate}}</h5>
             </div>
             <div class="col-6 col-sm-4 symptom-card">
-                <img src="assets/imgs/brush.svg" alt="courbatures-emoji">
-                <h5>{{'adviceIcon6' | translate}}</h5>
+                <img src="assets/imgs/ico4.svg" alt="courbatures-emoji">
+                <h5 [ngClass]="switchDirection()">{{'adviceIcon6' | translate}}</h5>
             </div>
 
         </div>
         <div class="row">
             <div class="mx-auto symptom-card">
                 <img src="assets/imgs/icon-house.svg" alt="housse-emoji">
-                <h5>{{'adviceIcon7' | translate}}</h5>
+                <h5 [ngClass]="switchDirection()">{{'adviceIcon7' | translate}}</h5>
             </div>
         </div>
     </div>
@@ -48,11 +48,11 @@
         </div>
         <div class="row justify-content-center">
             <div class="col-lg-12 col-sm-12">
-                <p dir="ltr">{{'adviceSentence' | translate}}</p>
+                <p [ngClass]="switchDirection()">{{'adviceSentence' | translate}}</p>
             </div>
             <div class="pt-3 col-lg-6 col-sm-6 d-flex flex-column align-items-center">
-                <button class="btn btn-lg" dir="rtl"><a href="http://www.covidmaroc.ma" target="_blank">www.covidmaroc.ma</a></button>
-                <button class="btn btn-lg mt-2" dir="rtl"><a target="_self" href="./assets/brochures/brochure.pdf" download>{{'adviceBtn' | translate}}</a></button>
+                <button class="btn btn-lg" [ngClass]="switchDirection()"><a href="http://www.covidmaroc.ma" target="_blank">www.covidmaroc.ma</a></button>
+                <button class="btn btn-lg mt-2" [ngClass]="switchDirection()"><a target="_self" href="./assets/brochures/brochure.pdf" download>{{'adviceBtn' | translate}}</a></button>
             </div>
         </div>
     </div>
@@ -63,7 +63,7 @@
     <div class="container section-container">
         <div class="row">
             <div class="col-12">
-                <h2 dir="rtl" id="symptoms-title">{{'homeTitle2' | translate}}</h2>
+                <h2 [ngClass]="switchDirection()" id="symptoms-title">{{'homeTitle2' | translate}}</h2>
             </div>
         </div>
         <div class="row">
@@ -106,25 +106,25 @@
     <div class="container section-container">
         <div class="row">
             <div class="col-12">
-                <h2 dir="ltr" id="recommandations-title">{{'homeTitle3' | translate}}</h2>
+                <h2 [ngClass]="switchDirection()" id="recommandations-title">{{'homeTitle3' | translate}}</h2>
             </div>
         </div>
-        <div class="row" dir="rtl">
+        <div class="row" [ngClass]="switchDirectionReverse()">
             <div class="col-lg-5 col-sm-12" id="recomm-contacts">
                 <h5>{{'homeCall' | translate}}</h5>
-                <span class="badge">141</span>
-                <span class="badge mt-1">080 100 47 47</span>
-                <span class="badge mt-1">300</span>
+                <span class="badge" dir="ltr">141</span>
+                <span class="badge mt-1" dir="ltr">080 100 47 47</span>
+                <span class="badge mt-1" dir="ltr">300</span>
                 <!-- <p><a href="www.sante.gov.ma" target="_blank">www.sante.gov.ma</a></p> -->
             </div>
             <div class="col-lg-7 col-sm-12" id="recomm-items">
                 <p>{{'homeTitle4' | translate}}</p>
-                <ul dir="rtl">
-                    <li dir="rtl">{{'homeSubP1' | translate}}</li>
-                    <li dir="rtl">{{'homeSubP2' | translate}}</li>
-                    <li dir="rtl">{{'homeSubP3' | translate}}</li>
-                    <li dir="rtl">{{'homeSubP4' | translate}}</li>
-                    <li dir="rtl">{{'homeSubP5' | translate}}</li>
+                <ul [ngClass]="switchDirection()">
+                    <li [ngClass]="switchDirection()" [ngClass]="alignText()">{{'homeSubP1' | translate}}</li>
+                    <li [ngClass]="switchDirection()" [ngClass]="alignText()">{{'homeSubP2' | translate}}</li>
+                    <li [ngClass]="switchDirection()" [ngClass]="alignText()">{{'homeSubP3' | translate}}</li>
+                    <li [ngClass]="switchDirection()" [ngClass]="alignText()">{{'homeSubP4' | translate}}</li>
+                    <li [ngClass]="switchDirection()" [ngClass]="alignText()">{{'homeSubP5' | translate}}</li>
                 </ul>
             </div>
         </div>

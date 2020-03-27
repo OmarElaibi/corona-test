@@ -1,6 +1,6 @@
 * {
   font-family: 'Cairo', sans-serif !important;
-  direction : ltr !important;
+  /* direction : ltr !important; */
 }
 
 #medical-news {
@@ -78,11 +78,10 @@
   width: 100%;
   font-size: 24px;
   font-weight: 700;
-  text-align: left;
+  text-align: center;
   color: #7F7F7F;
   line-height: 35px;
   margin-bottom: 30px;
-  margin-left:30px;
 }
 
 #hero-text-container button {
@@ -206,7 +205,7 @@
 #recomm-items ul li {
   font-size: 19px;
   font-weight: 500;
-  text-align: left;
+  /* text-align: left;  */
   color: #fff;
   padding-bottom: 10px;
   list-style: none;

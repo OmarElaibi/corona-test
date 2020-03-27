@@ -1,10 +1,6 @@
 * {
   font-family: 'Cairo', sans-serif;
-  direction:ltr !important;
-}
-
-#quiz-section {
-  /* min-height: 75vh; */
+  /* direction:ltr !important; */
 }
 
 .step-label {
@@ -79,13 +75,9 @@
         border-top: 1px solid #026534 !important;
     }
 
-    /* ::ng-deep .mat-step-header .mat-step-icon-selected {
-        background-color: #F4CF1B !important;
-        color: #F4CF1B !important;
-        box-shadow: 0 0 0 7px #88B7D3;
-        width: 7px !important;
-        height: 7px !important;
-    } */
+    ::ng-deep .mat-horizontal-stepper-header-container {
+        width: 80% !important;
+    }
 
     .dng {
         font-size: 30px !important;
@@ -106,15 +98,18 @@
 ::ng-deep .mat-horizontal-stepper-header-container {
     pointer-events: none !important;
     width: 60%;
-
 }
 
 ::ng-deep .mat-horizontal-content-container {
     width: 100%;
 }
 
+::ng-deep .mat-horizontal-stepper-header::after, ::ng-deep .mat-horizontal-stepper-header::before {
+    border-top: 0px !important;
+}
+
 ::ng-deep .mat-stepper-horizontal-line {
-    border-top: 2px solid #026534 !important;
+    border-top: 0px !important;
     /* margin: 0 -16px;
     min-width: 32px; */
 }
@@ -122,6 +117,10 @@
 ::ng-deep .mat-horizontal-stepper-header {
     padding-left: 0px !important;
     padding-right: 0px !important;
+}
+
+::ng-deep .mat-step-icon-content {
+    display: none !important;
 }
 
 ::ng-deep .mat-step-header:hover, ::ng-deep .mat-step-header.cdk-program-focused, ::ng-deep .mat-step-header.cdk-keyboard-focused {

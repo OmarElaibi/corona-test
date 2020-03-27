@@ -1,6 +1,6 @@
 * {
   font-family: 'Cairo', sans-serif !important;
-  direction : ltr !important;
+  /* direction : ltr !important; */
 }
 
 #info {
@@ -180,7 +180,7 @@
 #recomm-items ul li {
   font-size: 19px;
   font-weight: 500;
-  text-align: left;
+  /* text-align: left; */
   color: #fff;
   padding-bottom: 10px;
   list-style: none;

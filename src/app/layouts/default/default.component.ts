@@ -8,15 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DefaultComponent implements OnInit {
 
-  supportLanguages = ['ar', 'fr'];
-  
-  constructor(public translateService: TranslateService) {
-    this.translateService.addLangs(this.supportLanguages);
-    this.translateService.setDefaultLang('fr');
-
-    // const browserlang = this.translateService.getBrowserLang();
-    // this.translateService.use(browserlang);
-  }
+  constructor() {}
 
 
   ngOnInit(): void {

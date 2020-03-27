@@ -10,3 +10,23 @@ body {
   font-family: Roboto, "Helvetica Neue", sans-serif;
   overflow-x: hidden;
 }
+
+/* Direction classes */
+
+.ltr {
+  direction: ltr !important;
+}
+
+.rtl {
+  direction: rtl !important;
+}
+
+.text-align-left {
+  text-align: left;
+}
+
+.text-align-right {
+  text-align: right;
+}
+
+/* **************************** */

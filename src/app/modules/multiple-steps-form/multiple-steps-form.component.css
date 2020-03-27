@@ -14,6 +14,7 @@
   height: 10px !important;
   border-radius: 7px !important;
   margin-right: 10px;
+  margin-left: 10px;
 }
 
 #formProgressBar span {
@@ -136,7 +137,7 @@ height:100px;
   }
 
   label {
-    width: 60px;
+    width: 85px;
     height: 80px;
     border: 2px solid #1078AD;
   }
@@ -149,6 +150,10 @@ height:100px;
   label>span {
     font-size: 15px;
     font-weight: 700;
+  }
+
+  .btn-form {
+    min-width: 100px !important;
   }
 }
 
