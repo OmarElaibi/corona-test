@@ -61,21 +61,21 @@
             </div>
         </div>
         <div class="row" [ngClass]="switchDirectionReverse()">
-            <div class="col-lg-5 col-sm-12" id="recomm-contacts">
+            <div class="col-lg-3 col-sm-12" id="recomm-contacts">
                 <h5>{{'homeCall' | translate}}</h5>
                 <span class="badge" dir="ltr">141</span>
                 <span class="badge mt-1" dir="ltr">080 100 47 47</span>
                 <span class="badge mt-1" dir="ltr">300</span>
                 <!-- <p><a href="www.sante.gov.ma" target="_blank">www.sante.gov.ma</a></p> -->
             </div>
-            <div class="col-lg-7 col-sm-12" id="recomm-items">
-                <p>{{'homeTitle4' | translate}}</p>
+            <div class="col-lg-9 col-sm-12" id="recomm-items">
+                <p [ngClass]="switchDirection()">{{'homeTitle4' | translate}}</p>
                 <ul [ngClass]="switchDirection()">
-                    <li [ngClass]="switchDirection()" [ngClass]="alignText()">{{'homeSubP1' | translate}}</li>
-                    <li [ngClass]="switchDirection()" [ngClass]="alignText()">{{'homeSubP2' | translate}}</li>
-                    <li [ngClass]="switchDirection()" [ngClass]="alignText()">{{'homeSubP3' | translate}}</li>
-                    <li [ngClass]="switchDirection()" [ngClass]="alignText()">{{'homeSubP4' | translate}}</li>
-                    <li [ngClass]="switchDirection()" [ngClass]="alignText()">{{'homeSubP5' | translate}}</li>
+                    <li [ngClass]="switchDirection()" [ngClass]="alignText()"><span> &#9888;</span> {{'homeSubP1' | translate}}</li>
+                    <li [ngClass]="switchDirection()" [ngClass]="alignText()"><span> &#9888;</span> {{'homeSubP2' | translate}}</li>
+                    <li [ngClass]="switchDirection()" [ngClass]="alignText()"><span> &#9888;</span> {{'homeSubP3' | translate}}</li>
+                    <li [ngClass]="switchDirection()" [ngClass]="alignText()"><span> &#9888;</span> {{'homeSubP4' | translate}}</li>
+                    <li [ngClass]="switchDirection()" [ngClass]="alignText()"><span> &#9888;</span> {{'homeSubP5' | translate}}</li>
                 </ul>
             </div>
         </div>

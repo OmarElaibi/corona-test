@@ -200,23 +200,25 @@
 
 #recomm-items ul {
   margin-top: 20px;
+  list-style-position: outside !important;
 }
 
 #recomm-items ul li {
   font-size: 19px;
   font-weight: 500;
-  /* text-align: left;  */
   color: #fff;
   padding-bottom: 10px;
   list-style: none;
+  display: block;
+  padding-left: 1.5em;
+  line-height: 25px;
+  display: flex;
 }
 
-#recomm-items ul li::before {
-  content: "\26A0";
+#recomm-items ul li span {
   color: #F4CF1B;
   font-weight: bold;
-  display: inline-block;
-  width: 1.5em;
+  width: 1.7em;
 }
 
 #recomm-contacts {

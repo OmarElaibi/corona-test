@@ -1,6 +1,7 @@
 import { TranslateService } from '@ngx-translate/core';
 import { Component, OnInit } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
+import { TestService } from '../../services/test.service';
 
 @Component({
   selector: 'app-header',
@@ -10,7 +11,7 @@ import { Router, NavigationEnd } from '@angular/router';
 export class HeaderComponent implements OnInit {
 
   supportLanguages = ['ar', 'fr'];
-  constructor(private router: Router, public translateService: TranslateService) {
+  constructor(private router: Router, public translateService: TranslateService, private testService: TestService) {
     this.translateService.addLangs(this.supportLanguages);
     this.translateService.setDefaultLang('fr');
   }
@@ -38,9 +39,11 @@ export class HeaderComponent implements OnInit {
     if (this.translateService.currentLang === 'ar') {
       this.translateService.use('fr');
       localStorage.setItem('lang', 'fr');
+      this.testService.langChanged('fr');
     } else {
       this.translateService.use('ar');
       localStorage.setItem('lang', 'ar');
+      this.testService.langChanged('ar');
     }
   }
 

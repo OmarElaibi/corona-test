@@ -12,12 +12,25 @@ export class QuizComponent implements OnInit {
 
   @ViewChild('nextButton') btn;
 
-  resultat: string;
+  resultat: any;
   message: string;
 
   constructor(private service: TestService, private router: Router) { }
 
   ngOnInit(): void {
+    this.service.langChangedEvent.subscribe((data: string) => {
+      if (this.resultat == null) {
+        console.log('null');
+      } else {
+        if (data === 'ar') {
+          this.resultat = this.service.resultat.ar;
+          this.message = this.service.message.ar;
+        } else {
+          this.resultat = this.service.resultat.fr;
+          this.message = this.service.message.fr;
+        }
+      }
+    });
   }
 
   switchDirection() {
@@ -49,8 +62,13 @@ export class QuizComponent implements OnInit {
   }
 
   nextClicked() {
-    this.resultat = this.service.resultat;
-    this.message = this.service.message;
+    if (localStorage.getItem('lang') === 'ar') {
+      this.resultat = this.service.resultat.ar;
+      this.message = this.service.message.ar;
+    } else if (localStorage.getItem('lang') === 'fr') {
+      this.resultat = this.service.resultat.fr;
+      this.message = this.service.message.fr;
+    }
     this.btn.nativeElement.click();
   }
 
@@ -59,12 +77,16 @@ export class QuizComponent implements OnInit {
   }
 
   checkResult() {
-    console.log("check check");
+    console.log('check check');
     if (this.resultat === 'خصك تعيط ل 141') {
       return true;
     } else {
       return false;
     }
+  }
+
+  realTimeResult() {
+    return this.resultat;
   }
 
 }

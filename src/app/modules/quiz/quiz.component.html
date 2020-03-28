@@ -37,7 +37,7 @@
             <!-- third step content -->
             <div class="jumbotron" [ngClass]="switchDirection()">
               <h5 id="infos-title">{{'Results' | translate}}</h5>
-              <p class="result-paragraph" id="result" style="white-space: pre-line;" [ngClass]="{'dng': resultat == 'خصك تعيط ل 141' || resultat == 'Appelez le 141'}">{{resultat}}</p>
+              <p class="result-paragraph" id="result" style="white-space: pre-line;" [ngClass]="{'dng': resultat == 'خصك تعيط ل 141' || resultat == 'Appelez le 141'}" [innerHtml]="realTimeResult()"></p>
               <hr class="my-4">
               <p class="result-paragraph" id="conseil">{{message}}</p>
 
