@@ -1,6 +1,7 @@
 //Install express server
 const express = require('express');
 const path = require('path');
+const auth = require('./auth')
  
 const app = express();
  
@@ -8,7 +9,7 @@ const app = express();
 // Replace the '/dist/<to_your_project_name>'
 app.use(express.static(__dirname + '/dist/covitest'));
 
-app.use(express.basicAuth("youcode", "youcode18"));
+app.use(auth);
  
 app.get('*', function(req,res) {
   // Replace the '/dist/<to_your_project_name>/index.html'
